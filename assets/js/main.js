@@ -95,7 +95,7 @@ const propiedadesAlquiler = [
             <h5 class="card-title">${propiedad.nombre}</h5>
             <p class="card-text">${propiedad.descripcion}</p>
             <p><i class="fas fa-map-marker-alt"></i> ${propiedad.ubicacion}</p>
-            <p><i class="fas fa-bed"></i> ${propiedad.habitaciones} Habitaciones | <i class="fas fa-bath"></i> ${propiedad.banos} Baños</p>
+            <p><i class="fas fa-bed"></i> ${propiedad.habitaciones} Habitaciones</p>
             <p><i class="fas fa-dollar-sign"></i> ${propiedad.costo}</p>
             <p class="${propiedad.smoke ? 'text-success' : 'text-danger'}">
               <i class="${propiedad.smoke ? 'fas fa-smoking' : 'fas fa-smoking-ban'}"></i> ${propiedad.smoke ? 'Permitido fumar' : 'No se permite fumar'}
@@ -114,7 +114,9 @@ const propiedadesAlquiler = [
     const ventaContenedor = document.getElementById('venta-propiedades');
     const alquilerContenedor = document.getElementById('alquiler-propiedades');
   
-    // Renderizar sólo las primeras 3 propiedades en cada sección
-    renderizarPropiedades(propiedadesVenta.slice(0, 3), ventaContenedor);
-    renderizarPropiedades(propiedadesAlquiler.slice(0, 3), alquilerContenedor);
+    if (ventaContenedor && alquilerContenedor) {
+      // Página de inicio: renderizar solo las primeras 3 propiedades en cada sección
+      renderizarPropiedades(propiedadesVenta.slice(0, 3), ventaContenedor);
+      renderizarPropiedades(propiedadesAlquiler.slice(0, 3), alquilerContenedor);
+    } 
   });
