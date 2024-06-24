@@ -38,7 +38,37 @@ const propiedadesAlquiler = [
       costo: 1500,
       smoke: true,
       pets: true
-    }
+    },
+    {
+        nombre: "Casa de campo rústica",
+        src: "https://www.elmueble.com/medio/2019/10/02/fachada-casa-campo-con-jardin-00492107_116fe7da_2000x1335.jpg",
+        descripcion: "Hermosa casa de campo en una zona rural tranquila, ideal para relajarse.",
+        ubicacion: "456 Countryside Road, Rural Area, CA 67890",
+        habitaciones: 3,
+        costo: 3500,
+        smoke: true,
+        pets: true
+      },
+      {
+        nombre: "Villa moderna con piscina",
+        src: "https://pic.le-cdn.com/thumbs/520x390/08/1/properties/Property-35cafd0dd5f3aa72c67afda5baba8ed2-129005063.jpg",
+        descripcion: "Villa moderna con piscina y jardín amplio en una zona exclusiva.",
+        ubicacion: "123 Modern Villa Lane, Exclusive Area, CA 78901",
+        habitaciones: 5,
+        costo: 7000,
+        smoke: false,
+        pets: false
+      },
+      {
+        nombre: "Apartamento céntrico con balcón",
+        src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/141578403.jpg?k=0277f4c9c96356e552e9195b8622d3f29d14d333763a03c5a87afe06a44d5a55&o=&hp=1",
+        descripcion: "Apartamento en el centro de la ciudad con un balcón que ofrece vistas increíbles.",
+        ubicacion: "789 Central Avenue, Downtown, CA 89012",
+        habitaciones: 2,
+        costo: 2200,
+        smoke: true,
+        pets: false
+      }
   ];
   
   const propiedadesVenta = [
@@ -81,7 +111,37 @@ const propiedadesAlquiler = [
       costo: 8000,
       smoke: false,
       pets: true
-    }
+    },
+    {
+        nombre: "Estudio acogedor en el centro",
+        src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/351759359.jpg?k=784a78faa7516a4f23954de3fc87e1dec1f4cef59ce4e4d56b8adc676b531663&o=&hp=1",
+        descripcion: "Estudio pequeño pero acogedor en el corazón de la ciudad.",
+        ubicacion: "123 City Center Blvd, Urban City, CA 12345",
+        habitaciones: 1,
+        costo: 1500,
+        smoke: false,
+        pets: true
+      },
+      {
+        nombre: "Loft industrial",
+        src: "https://hips.hearstapps.com/hmg-prod/images/tribeca-loft-en-ny-03-1535103794.jpg",
+        descripcion: "Loft estilo industrial con amplios espacios abiertos.",
+        ubicacion: "456 Industrial Lane, Warehouse District, CA 23456",
+        habitaciones: 1,
+        costo: 1800,
+        smoke: true,
+        pets: true
+      },
+      {
+        nombre: "Casa adosada familiar",
+        src: "https://a0.muscache.com/im/pictures/9450a2b3-f31b-430f-a376-2f9db96e4470.jpg?im_w=720",
+        descripcion: "Casa adosada perfecta para una familia, con jardín y parque cercano.",
+        ubicacion: "789 Family Road, Suburbia, CA 34567",
+        habitaciones: 4,
+        costo: 2500,
+        smoke: false,
+        pets: true
+      }
   ];
   
   function renderizarPropiedades(propiedades, contenedor) {
